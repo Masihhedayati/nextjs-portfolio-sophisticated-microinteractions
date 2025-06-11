@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://portfolio.dev/sitemap.xml
+
+# Performance optimization
+User-agent: *
+Crawl-delay: 1
+
+# Block crawling of internal resources
+Disallow: /api/
+Disallow: /_next/
+Disallow: /public/
+Disallow: /*.json$
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
