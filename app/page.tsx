@@ -4,7 +4,7 @@ import '@root/global.scss';
 // import * as Constants from '@common/constants';
 // import * as Utilities from '@common/utilities';
 
-import PortfolioApplicationSimple from '@components/PortfolioApplicationSimple';
+import PortfolioApplicationComplete from '@components/PortfolioApplicationComplete';
 import DefaultLayout from '@components/DefaultLayout';
 import Package from '@root/package.json';
 import Script from 'next/script';
@@ -72,7 +72,7 @@ export async function generateMetadata({ params, searchParams }) {
 export default async function Page(props) {
   return (
     <DefaultLayout previewPixelSRC="https://intdev-global.s3.us-west-2.amazonaws.com/template-app-icon.png">
-      <PortfolioApplicationSimple />
+      <PortfolioApplicationComplete />
     </DefaultLayout>
   );
 }
